@@ -61,8 +61,6 @@ html[data-scroll='0'] nav.navbar.opened {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
-    opacity: 0.99;
-    background-color: #333;
   }
   .cover:after { 
     opacity: 0.85;
