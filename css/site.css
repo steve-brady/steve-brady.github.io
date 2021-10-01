@@ -56,11 +56,15 @@ html[data-scroll='0'] nav.navbar.opened {
     width: 100%;
 }
 .cover:before { 
-    background: url(../assets/background.jpg) no-repeat right center fixed;
+    background-image: url(../assets/background.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-attachment: fixed;
   }
   .cover:after { 
     opacity: 0.85;
