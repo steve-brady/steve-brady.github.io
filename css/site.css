@@ -66,10 +66,10 @@ html[data-scroll='0'] nav.navbar.opened {
     background-position-y: center;
     background-attachment: fixed;
   }
-  .cover:after { 
+  /* .cover:after { 
     opacity: 0.85;
     background-color: #333;
-  }
+  } */
   .cover-content .cover-title {
     line-height: 1
   }
