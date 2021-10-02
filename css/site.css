@@ -65,6 +65,7 @@ html[data-scroll='0'] nav.navbar.opened {
     background-position-x: right;
     background-position-y: center;
     background-attachment: fixed;
+    display: block;
   }
   /* .cover:after { 
     opacity: 0.85;
