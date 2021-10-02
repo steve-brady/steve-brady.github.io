@@ -64,7 +64,7 @@ html[data-scroll='0'] nav.navbar.opened {
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     display: block;
   }
   /* .cover:after { 
