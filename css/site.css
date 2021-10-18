@@ -11,22 +11,31 @@ body {
   color: #999 !important;
 }
 
-html:not([data-scroll='0']) nav.navbar {
+nav.navbar {
   background-color: #333;
   box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.075);
 }
-nav.navbar,
-html:not([data-scroll]) nav.navbar,
-html[data-scroll='0'] nav.navbar {
-  background-color: transparent;
-  transition: background-color ease-in .15s;
-  box-shadow: none;
+@media (min-width: 768px)
+{
+  html:not([data-scroll='0']) nav.navbar {
+    background-color: #333;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.075);
+  }
+  
+  nav.navbar,
+  html:not([data-scroll]) nav.navbar,
+  html[data-scroll='0'] nav.navbar {
+    background-color: transparent;
+    transition: background-color ease-in .15s;
+    box-shadow: none;
+  }
+  html:not([data-scroll]) nav.navbar.opened,
+  html[data-scroll='0'] nav.navbar.opened {
+    background-color: #333;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.075);
+  }
 }
-html:not([data-scroll]) nav.navbar.opened,
-html[data-scroll='0'] nav.navbar.opened {
-  background-color: #333;
-  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.075);
-}
+
 
 .navbar-brand {
   font-size: 1.5rem;
@@ -115,8 +124,11 @@ html[data-scroll='0'] nav.navbar.opened {
 .bg-image {
   cursor: pointer;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
 }
-.bg-image:after {
+.bg-image:not(.no-hover):after {
   content: '';
   position: absolute;
   top:0;
@@ -126,9 +138,32 @@ html[data-scroll='0'] nav.navbar.opened {
   background-color: transparent;
   transition: background-color ease-in 0.2s;
 }
-.bg-image:hover:after {
+.bg-image:not(.no-hover):hover:after {
   background-color: rgba(255,255,255,.25);
 }
+
+#gallery .bg-image {
+  min-height: 300px;
+}
+.carousel-item .bg-image {
+  height: 100px;
+}
+#modalImage.bg-image {
+  height: 350px;
+  background-size: 100%;
+}
+
+@media (min-width: 768px) {
+  #modalImage.bg-image {
+    height: 70vh;
+    background-size: cover;
+  }
+  .carousel-item .bg-image {
+    height: 20vh;
+    background-size: cover;
+  }
+}
+
 footer {
   position: relative;
   color: #f5f5f5;

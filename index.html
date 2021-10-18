@@ -123,22 +123,16 @@
         <section id="gallery" class="container">
             <div class="row">
                 <div class="col mb-5">
-                    <h3>Photo Gallery</h3>
+                    <h3>Photo Albums</h3>
                     <div class="row">
                         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                            <div class="bg-image shadow-sm rounded" data-bs-toggle="modal" data-bs-target="#photoModal" data-index="0">
-                                <img src="./assets/camero.jpg" class="w-100" />
-                            </div>
+                            <div class="bg-image shadow-sm rounded" data-bs-toggle="modal" data-bs-target="#photoModal" style="background-image:url('./assets/camero.jpg')" data-index="0"></div>
                         </div>
                         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                            <div class="bg-image shadow-sm rounded" data-bs-toggle="modal" data-bs-target="#photoModal" data-index="1">
-                                <img src="./assets/land_rover.jpg" class="w-100" />
-                            </div>
+                            <div class="bg-image shadow-sm rounded" data-bs-toggle="modal" data-bs-target="#photoModal" style="background-image:url('./assets/land_rover.jpg')" data-index="1"></div>
                         </div>
                         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                            <div class="bg-image shadow-sm rounded" data-bs-toggle="modal" data-bs-target="#photoModal" data-index="2">
-                                <img src="./assets/rubicon.jpg" class="w-100" />
-                            </div>
+                            <div class="bg-image shadow-sm rounded" data-bs-toggle="modal" data-bs-target="#photoModal" style="background-image:url('./assets/rubicon.jpg')" data-index="2"></div>
                         </div>
                     </div>
                 </div>
@@ -217,70 +211,15 @@
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
+                <div id="modalImage" class="fade show bg-image no-hover" ></div>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <img id="modalImage" class="fade show" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg">
                 <div class="container text-center my-3">
                     <div class="row mx-auto my-auto justify-content-center">
                         <div id="imageCarousel" class="carousel slide d-flex">
                             <a class="carousel-control-prev bg-transparent w-aut pe-2" href="#imageCarousel" role="button" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             </a>
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <div class="col-md-3">
-                                        <div class="card">
-                                            <div class="bg-image card-img">
-                                                <img src="./assets/camero.jpg" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3">
-                                        <div class="card">
-                                            <div class="bg-image card-img">
-                                                <img src="./assets/land_rover.jpg" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3">
-                                        <div class="card">
-                                            <div class="bg-image card-img">
-                                                <img src="./assets/rubicon.jpg" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3">
-                                        <div class="card">
-                                            <div class="bg-image card-img">
-                                                <img src="./assets/yukon_denali.jpg" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3">
-                                        <div class="card">
-                                            <div class="bg-image card-img">
-                                                <img src="./assets/challenger.jpg" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-3">
-                                        <div class="card">
-                                            <div class="bg-image card-img">
-                                                <img src="./assets/suburban.jpg" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div id="carouselImageList" class="carousel-inner" role="listbox"></div>
                             <a class="carousel-control-next bg-transparent w-aut ps-2" href="#imageCarousel" role="button" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             </a>
