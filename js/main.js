@@ -22,8 +22,8 @@ const images = [
     './assets/camero.jpg',
     './assets/land_rover.jpg',
     './assets/rubicon.jpg',
-    './assets/yukon_denali.jpg',
     './assets/challenger.jpg',
+    './assets/yukon_denali.jpg',
     './assets/suburban.jpg',
 ]
 
